@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 import cookieParser from 'cookie-parser';
 import {dbConnection} from './database/dbConnection.js'
+import { errorMiddleware } from './middlewares/error.js';
 
 
 const app = express() ;
@@ -21,4 +22,6 @@ app.use(express.json()) ;
 app.use(express.urlencoded({ extended: true }));
 dbConnection() ;
 
+
+app.use(errorMiddleware) ;
 export default app ;
