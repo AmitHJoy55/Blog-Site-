@@ -57,3 +57,20 @@ export const register = catchAsyncErrors(async (req, res, next) => {
   });
   sendToken(user, 200, "User registered successfully", res);
 });
+
+export const login = catchAsyncErrors(async (req, res, next) => {
+  const { registrationNo, password } = req.body;
+  if (!registrationNo || !password ) {
+    return next(new ErrorHandler("Please fill full form!", 400));
+  }
+  const user = await User.findOne({ registrationNo }).select("+password");
+  if (!user) {
+    return next(new ErrorHandler("Invalid registrationNo or password!", 400));
+  }
+  const isPasswordMatched = await user.comparePassword(password);
+  if (!isPasswordMatched) {
+    return next(new ErrorHandler("Invalid registrationNo or password", 400));
+  }
+  
+  sendToken(user, 200, "User logged in successfully", res);
+});
