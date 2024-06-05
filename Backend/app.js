@@ -4,6 +4,8 @@ import cors from 'cors'
 import cookieParser from 'cookie-parser';
 import {dbConnection} from './database/dbConnection.js'
 import { errorMiddleware } from './middlewares/error.js';
+import blogRouter from './routes/blogRouter.js';
+import userRouter from './routes/userRoute.js' ;
 
 
 const app = express() ;
@@ -20,8 +22,12 @@ app.use(cors ({
 app.use(cookieParser()) ;
 app.use(express.json()) ;
 app.use(express.urlencoded({ extended: true }));
-dbConnection() ;
 
+
+app.use('/api/v1/user' , userRouter);
+app.use('/api/v1/blog' , blogRouter);
+
+dbConnection() ;
 
 app.use(errorMiddleware) ;
 export default app ;
