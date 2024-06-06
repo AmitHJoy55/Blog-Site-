@@ -6,7 +6,7 @@ import {dbConnection} from './database/dbConnection.js'
 import { errorMiddleware } from './middlewares/error.js';
 import blogRouter from './routes/blogRouter.js';
 import userRouter from './routes/userRoute.js' ;
-
+import fileUpload from 'express-fileupload';
 
 const app = express() ;
 dotenv.config({path: './config/config.env'}) ;
