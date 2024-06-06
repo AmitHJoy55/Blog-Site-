@@ -134,3 +134,69 @@ export const getMyBlogs = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
+export const updateBlog = catchAsyncErrors(async (req, res, next) => {
+  const { id } = req.params;
+  let blog = await Blog.findById(id);
+  if (!blog) {
+    return next(new ErrorHandler("Blog not found!", 404));
+  }
+  const newBlogData = {
+    title: req.body.title,
+    intro: req.body.intro,
+    category: req.body.category,
+    paraOneTitle: req.body.paraOneTitle,
+    paraOneDescription: req.body.paraOneDescription,
+    published: req.body.published,
+  };
+  if (req.files) {
+    const { mainImage, paraOneImage} = req.files;
+    const allowedFormats = ["image/png", "image/jpg","image/jpeg", "image/webp"];
+    if (
+      (mainImage && !allowedFormats.includes(mainImage.mimetype)) ||
+      (paraOneImage && !allowedFormats.includes(paraOneImage.mimetype)) 
+    ) {
+      return next(
+        new ErrorHandler(
+          "Invalid file format. Only PNG, JPG and Webp formats are allowed.",
+          400
+        )
+      );
+    }
+    if (req.files && mainImage) {
+      const blogMainImageId = blog.mainImage.public_id;
+      await cloudinary.uploader.destroy(blogMainImageId);
+      const newBlogMainImage = await cloudinary.uploader.upload(
+        mainImage.tempFilePath
+      );
+      newBlogData.mainImage = {
+        public_id: newBlogMainImage.public_id,
+        url: newBlogMainImage.secure_url,
+      };
+    }
+
+    if (req.files && paraOneImage) {
+      if (blog.paraOneImage && blog.paraOneImage.public_id) {
+        const blogParaOneImageId = blog.paraOneImage.public_id;
+        await cloudinary.uploader.destroy(blogParaOneImageId);
+      }
+      const newBlogParaOneImage = await cloudinary.uploader.upload(
+        paraOneImage.tempFilePath
+      );
+      newBlogData.paraOneImage = {
+        public_id: newBlogParaOneImage.public_id,
+        url: newBlogParaOneImage.secure_url,
+      };
+    }
+    
+  }
+  blog = await Blog.findByIdAndUpdate(id, newBlogData, {
+    new: true,
+    runValidators: true,
+    useFindAndModify: false,
+  });
+  res.status(200).json({
+    success: true,
+    message: "Blog Updated!",
+    blog,
+  });
+});

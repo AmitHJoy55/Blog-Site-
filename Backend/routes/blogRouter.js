@@ -9,6 +9,6 @@ router.delete("/delete/:id", isAuthenticated, isAuthorized("Admin"), deleteBlog 
 router.get("/all", getAllBlogs);  
 router.get("/singleblog/:id", isAuthenticated, getSingleBlog);
 router.get("/myblogs", isAuthenticated, isAuthorized("Admin"), getMyBlogs);
-
+router.put("/update/:id", isAuthenticated, isAuthorized("Admin"), updateBlog);
 
 export default router ;
