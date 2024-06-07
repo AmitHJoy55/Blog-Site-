@@ -12,6 +12,7 @@ import Login from "./components/pages/Login";
 import AllAdmins from "./components/pages/AllAdmins";
 import UpdateBlog from "./components/pages/UpdateBlog";
 import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 const App = () => {
   
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blog/update/:id" element={<UpdateBlog />} />
         </Routes>
+        <Footer/>
        
       </BrowserRouter>
     </>
