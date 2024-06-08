@@ -13,6 +13,7 @@ import AllAdmins from "./components/pages/AllAdmins";
 import UpdateBlog from "./components/pages/UpdateBlog";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/blog/update/:id" element={<UpdateBlog />} />
         </Routes>
         <Footer/>
+        <Toaster />
        
       </BrowserRouter>
     </>
