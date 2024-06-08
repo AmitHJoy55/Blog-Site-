@@ -233,9 +233,9 @@ nav .btns .dark-mode {
   .header .links {
     position: fixed;
     margin: 0;
-    top: 81px;
+    top: 120px;
     background: #181a2a;
-    width: 360px;
+    width: 300px;
     flex-direction: column;
     z-index: 10;
     justify-content: center;
@@ -406,15 +406,99 @@ footer .container .news_letter {
 }
 
 
+/* ********************** Hero Section ********************** */
 
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --button-background-light: #3B82F6;
+  --button-text-light: #ffffff;
+  
+  --background-color-dark: #181a2a;
+  --text-color-dark: #ffffff;
+  --button-background-dark: #2d3748;
+  --button-text-dark: #ffffff;
+}
 
+body.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
 
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
 
+.hero {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 90%;
+}
 
+.hero-image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
 
+.hero-paragraph {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
 
+.hero-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.light-hero {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.dark-hero {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.light-hero .hero-button {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+}
+
+.dark-hero .hero-button {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
 
 
 
