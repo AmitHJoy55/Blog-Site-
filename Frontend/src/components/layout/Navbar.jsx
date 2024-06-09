@@ -67,8 +67,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to={"/authors"} onClick={handleNavbar}>
-                AUTHORS
+              <Link to={"/admins"} onClick={handleNavbar}>
+                ADMINS
               </Link>
             </li>
             <li>

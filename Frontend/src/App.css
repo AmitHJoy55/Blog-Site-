@@ -768,3 +768,61 @@ body.dark-mode {
   }
 }
 
+/* ***********************All Admins Page************************* */
+
+.all-admins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-admins h2 {
+  font-size: 1.75rem;
+  margin: 1.75rem 0;
+}
+.all-admins .container {
+  min-width: 1500px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.all-admins .container .card {
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.all-admins .container .card img {
+  height: 190px;
+  width: 100%;
+}
+.all-admins .container .card p:last-child {
+  font-weight: 300;
+  color: gray;
+}
+@media (max-width: 1520px) {
+  .all-admins .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 659px) {
+  .all-admins .container {
+    gap: 20px;
+  }
+  .all-admins .container .card {
+    width: 400px;
+    margin: 0 auto;
+    height: 300px;
+  }
+}
+@media (max-width: 459px) {
+  .all-admins .container .card {
+    width: 100%;
+  }
+}
