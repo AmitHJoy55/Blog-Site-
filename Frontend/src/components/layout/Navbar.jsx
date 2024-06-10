@@ -7,6 +7,7 @@ import { MdDarkMode } from "react-icons/md";
 import { CiLight } from "react-icons/ci";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Search from "../miniComponents/Search";
 
 
 const Navbar = () => {
@@ -80,6 +81,9 @@ const Navbar = () => {
               <Link to={"/resource"} onClick={handleNavbar}>
                 RESOURCE
               </Link>
+            </li>
+            <li>
+              <Search />
             </li>
           </ul>
           <div className="btns">
