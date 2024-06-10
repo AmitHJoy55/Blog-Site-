@@ -6,14 +6,14 @@ import {dbConnection} from './database/dbConnection.js'
 import { errorMiddleware } from './middlewares/error.js';
 import blogRouter from './routes/blogRouter.js';
 import userRouter from './routes/userRoute.js' ;
-
+import fileUpload from 'express-fileupload';
 
 const app = express() ;
 dotenv.config({path: './config/config.env'}) ;
 
 
 app.use(cors ({
-    origin: [],
+    origin: [process.env.FRONTEND_URL],
     methods: ["GET" , "PUT" ,"DELETE" ,"POST"],
     credentials: true
 

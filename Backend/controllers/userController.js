@@ -9,6 +9,8 @@ export const register = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("User Avatar Required!", 400));
   }
   const { avatar } = req.files;
+  console.log("Avatar:", avatar);
+
   const allowedFormats = ["image/png", "image/jpg", "image/jpeg", "image/webp"];
   if (!allowedFormats.includes(avatar.mimetype)) {
     return next(
@@ -37,6 +39,8 @@ export const register = catchAsyncErrors(async (req, res, next) => {
   const cloudinaryResponse = await cloudinary.uploader.upload(
     avatar.tempFilePath
   );
+  console.log("Cloudinary Response:", cloudinaryResponse); // Debugging line
+  
   if (!cloudinaryResponse || cloudinaryResponse.error) {
     console.error(
       "Cloudinary error:",
