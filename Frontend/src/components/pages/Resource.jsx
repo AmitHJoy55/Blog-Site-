@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { Context } from "../../main";
+import HeroResource from '../miniComponents/HeroResource'
 
 const Resource = () => {
+  const { mode } = useContext(Context);
   return (
-    <div>
-      Resource
-    </div>
+    <article className={mode === "dark" ? "dark-bg" : "light-bg"}>
+      <HeroResource/>
+    </article>
   )
 }
 
