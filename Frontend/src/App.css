@@ -1145,3 +1145,55 @@ body.dark-mode {
     margin-top: 0;
   }
 }
+
+/* ************************* My Profile page ******************* */
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  min-height: 80vh;
+}
+.profile .avatar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-20deg);
+}
+
+.profile .avatar img {
+  height: 320px;
+}
+.profile .user-detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile .user-detail p {
+  font-weight: 700;
+}
+.light-bg .profile .user-detail p {
+  color: #13141e;
+}
+.dark-bg .profile .user-detail p {
+  color: #fff;
+}
+.profile .user-detail p span {
+  font-weight: 300;
+}
+@media (max-width: 1675px) {
+  .profile .avatar {
+    transform: skew(0);
+  }
+}
+@media (max-width: 1440px) {
+  .profile .avatar img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+  }
+  .profile {
+    flex-direction: column;
+  }
+}

@@ -44,8 +44,8 @@ const SideBar = ({ setComponent }) => {
           <FaArrowLeft />
         </div>
         <div className="user-detail">
-          <img src="./SWE.jpg" alt="avatar" />
-          <p>need to change</p>
+          <img src={user && user.avatar.url} alt="avatar" />
+          <p>{user.name}</p>
         </div>
         <ul>
           <button onClick={gotoHome}>
