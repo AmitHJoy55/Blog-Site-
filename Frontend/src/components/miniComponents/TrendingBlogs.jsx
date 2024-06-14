@@ -30,14 +30,14 @@ const TrendingBlogs = () => {
   };
 
   const { blogs } = useContext(Context);
-  const sportsBlogs = blogs?.filter((blog) => blog.category.toLowerCase() === 'education');
+  const trendingBlogs = blogs?.filter((blog) => blog.category.toLowerCase() === 'education');
 
   return (
     <div className="trending">
       <h3>Trending</h3>
       <Carousel responsive={responsive} >
-        {sportsBlogs && sportsBlogs.length > 0 ? (
-         sportsBlogs.slice(0, 6).map((element) => {
+        {trendingBlogs && trendingBlogs.length > 0 ? (
+         trendingBlogs.slice(0, 6).map((element) => {
             return (
               <Link className="card" key={element._id}>
                 <img
@@ -49,8 +49,8 @@ const TrendingBlogs = () => {
                 <h4>{element.title}</h4>
                 <div className="writer_section">
                   <div className="author">
-                    <img src={element.authorAvatar} alt="author_avatar" />
-                    <p>{element.authorName}</p>
+                    <img src={element.adminAvatar} alt="author_avatar" />
+                    <p>{element.adminName}</p>
                   </div>
                 </div>
               </Link>
