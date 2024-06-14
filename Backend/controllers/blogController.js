@@ -33,8 +33,8 @@ export const blogPost = catchAsyncErrors(async (req, res, next) => {
   } = req.body;
 
   const createdBy = req.user._id;
-  const authorName = req.user.name;
-  const authorAvatar = req.user.avatar.url;
+  const adminName = req.user.name;
+  const adminAvatar = req.user.avatar.url;
 
   if (!title || !category || !intro) {
     return next(
@@ -68,8 +68,8 @@ export const blogPost = catchAsyncErrors(async (req, res, next) => {
     paraOneTitle,
     category,
     createdBy,
-    authorAvatar,
-    authorName,
+    adminAvatar,
+    adminName,
     published,
     mainImage: {
       public_id: mainImageRes.public_id,

@@ -1197,3 +1197,118 @@ body.dark-mode {
     flex-direction: column;
   }
 }
+
+/* ************************* My Profile page ******************* */
+.create-blog h3 {
+  margin-bottom: 20px;
+}
+.create-blog .category-box,
+.create-blog .publish-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.create-blog .category-box select,
+.create-blog .publish-box select {
+  width: 250px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.create-blog input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid gray;
+  padding: 8px 5px;
+  margin-bottom: 20px;
+}
+
+.light-bg .create-blog .category-box select,
+.light-bg .create-blog .publish-box select,
+.light-bg .create-blog input {
+  color: #13141e;
+}
+.create-blog .category-box option,
+.create-blog .publish-box option {
+  background: #13141e;
+  color: #fff;
+}
+.dark-bg .create-blog .category-box select,
+.dark-bg .create-blog .publish-box select,
+.dark-bg .create-blog input {
+  color: #fff;
+}
+.create-blog .mainImg {
+  width: fit-content;
+  height: 500px;
+  margin-bottom: 20px;
+}
+.create-blog input:focus,
+.create-blog textarea:focus,
+.create-blog select:focus {
+  outline: none;
+}
+.create-blog .intro {
+  width: 100%;
+  margin-top: 25px;
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px 5px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.light-bg .create-blog .intro {
+  color: #13141e;
+}
+.dark-bg .create-blog .intro {
+  color: #fff;
+}
+.create-blog .sub-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+.create-blog img {
+  border-radius: 8px;
+  height: 350px;
+  width: fit-content;
+}
+.dark-bg .create-blog .sub-para input,
+.dark-bg .create-blog .sub-para textarea {
+  padding: 8px 4px;
+  border: 1px solid gray;
+  background: transparent;
+  color: #fff;
+}
+.create-blog form input::file-selector-button {
+  width: 300px;
+  position: absolute;
+  padding: 7px;
+  border: none;
+  background: #0e7490;
+  color: #fff;
+  font-weight: 700;
+}
+.create-blog form .create-btn {
+  padding: 8px 0;
+  width: 320px;
+  float: right;
+  background: #7e22ce;
+  transition: 0.3s;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.create-blog form .create-btn:hover {
+  transition: 0.3s;
+  background: #581c87;
+}
+
+@media (max-width: 667px) {
+  .create-blog form .create-btn {
+    width: 100%;
+  }
+}
