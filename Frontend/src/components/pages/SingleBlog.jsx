@@ -36,7 +36,7 @@ const SingleBlog = () => {
           <div className="writer_section">
             <div className="admin">
               <img src={blog.adminAvatar} alt="admin_avatar" />
-              <p>{blog.adminrName}</p>
+              <p>{blog.adminName}</p>
             </div>
           </div>
           {blog && blog.mainImage && (
