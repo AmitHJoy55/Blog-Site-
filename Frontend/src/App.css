@@ -1480,3 +1480,136 @@ body.dark-mode {
 }
 @media (max-width: 930px) {
 }
+
+/* ***************************** Update Blog ************************ */
+
+.update-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  min-width: 1500px;
+  max-width: 1500px;
+}
+.update-blog .category-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.update-blog .category-box,
+.update-blog .publish-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.update-blog .category-box select,
+.update-blog .publish-box select {
+  width: 250px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.update-blog input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid gray;
+  padding: 8px 5px;
+  margin-bottom: 20px;
+}
+
+.light-bg .update-blog .category-box select,
+.light-bg .update-blog .publish-box select,
+.light-bg .update-blog input {
+  color: #13141e;
+}
+.update-blog .category-box select:focus,
+.update-blog .publish-box select:focus,
+.update-blog input:focus {
+  outline: none;
+}
+.update-blog .category-box option,
+.update-blog .publish-box option {
+  background: #13141e;
+  color: #fff;
+}
+.dark-bg .update-blog .category-box select,
+.dark-bg .update-blog .publish-box select,
+.dark-bg .update-blog input {
+  color: #fff;
+}
+
+.update-blog .mainImg {
+  width: fit-content;
+  height: 500px;
+  margin-bottom: 20px;
+}
+.update-blog input:focus,
+.update-blog textarea:focus,
+.update-blog select:focus {
+  outline: none;
+}
+.update-blog .intro {
+  width: 100%;
+  margin-top: 25px;
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px 5px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.light-bg .update-blog .intro {
+  color: #13141e;
+}
+.dark-bg .update-blog .intro {
+  color: #fff;
+}
+.update-blog .sub-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+.update-blog img {
+  border-radius: 8px;
+  height: 350px;
+  width: fit-content;
+}
+.dark-bg .update-blog .sub-para input,
+.dark-bg .update-blog .sub-para textarea {
+  padding: 8px 4px;
+  border: 1px solid gray;
+  background: transparent;
+  color: #fff;
+}
+.update-blog input::file-selector-button {
+  width: 300px;
+  position: absolute;
+  padding: 7px;
+  border: none;
+  background: #0e7490;
+  color: #fff;
+  font-weight: 700;
+}
+.update-blog form .update-btn {
+  padding: 8px 0;
+  width: 320px;
+  float: right;
+  background: #facc15;
+  transition: 0.3s;
+  border: none;
+  color: #000;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.update-blog form .update-btn:hover {
+  transition: 0.3s;
+  background: #ca8a04;
+}
+
+@media (max-width: 1520px) {
+  .update-blog {
+    min-width: 100%;
+  }
+}
