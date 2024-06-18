@@ -1613,3 +1613,125 @@ body.dark-mode {
     min-width: 100%;
   }
 }
+
+
+/* ************************ Card For resource *********************** */
+
+.cardresouces {
+  display: flex;
+  background-color: #8577778f;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgb(248, 247, 247);
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.cardresouces figure {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.card-img-resouces {
+  width: 15rem;
+  height: 100%;
+}
+
+.card-body-resouces {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.card-title-resouces {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.cardresouces p {
+  margin: 0 0 1rem;
+}
+
+.card-actions-resouces {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-actions-resouces .btn-resource {
+  background-color: #a5aeb7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.10s;
+}
+
+
+.card-actions-resouces .btn-resource:hover {
+  background-color: #0375ee;
+  cursor: pointer;
+}
+.card-actions-resouces .btn-resource .linktocourse{
+  text-decoration: none;
+  color: white;
+}
+
+/* **************Resource page part after hero section *********** */
+
+.project__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* #projects{
+  padding: 50px 0;
+} */
+
+.projects-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
+
+/* aaaasdfghjklkjhgfds */
+
+/* Assuming you have a styles.css or similar file */
+/* Assuming you have a styles.css or similar file */
+/* .project__container {
+  display: flex;
+  flex-direction: column;
+} */
+
+.project-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+/* Optional: Adjust card styling as needed */
+.project-card {
+  flex: 0 0 calc(33.333% - 20px); /* Adjust width for 3 cards in a row */
+  margin: 10px; /* Adjust margin as needed */
+  box-sizing: border-box;
+  background-color: #4a4747;
+
+  
+}
+.project-card:hover {
+  background: rgb(146, 158, 174);
+  transform: translateY(-15px);
+}
+
+/* Optional: to ensure the cards look good on different screen sizes */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+  }
+
+  .project-card {
+    flex: 1 0 100%; /* Stacks cards vertically on smaller screens */
+  }
+}
