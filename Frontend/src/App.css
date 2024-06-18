@@ -1695,16 +1695,6 @@ body.dark-mode {
   margin-top: 40px;
 }
 
-
-/* aaaasdfghjklkjhgfds */
-
-/* Assuming you have a styles.css or similar file */
-/* Assuming you have a styles.css or similar file */
-/* .project__container {
-  display: flex;
-  flex-direction: column;
-} */
-
 .project-row {
   display: flex;
   justify-content: space-evenly;
@@ -1734,4 +1724,53 @@ body.dark-mode {
   .project-card {
     flex: 1 0 100%; /* Stacks cards vertically on smaller screens */
   }
+}
+
+/* ***************Mini-Card**************** */
+
+.mini-card {
+  background-color: #dedbdb;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  flex: 1 1 calc(33.333% - 40px); /* Adjust flex properties for responsive design */
+  box-sizing: border-box;
+  border-color: #000;
+}
+
+.mini-card:hover {
+  transform: translateY(-5px);
+  background-color: #abc9db;
+  
+}
+
+.mini-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* **********Subjects Section********* */
+
+.subject-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.course-section {
+   display: flex;
+   
+  justify-content: center;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }

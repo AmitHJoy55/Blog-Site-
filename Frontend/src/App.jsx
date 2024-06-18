@@ -14,6 +14,7 @@ import UpdateBlog from "./components/pages/UpdateBlog";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Semester from "../resource/Semester";
+import Subject from "../resource/Subject";
 import { Toaster } from "react-hot-toast";
 import { Context } from "./main";
 import axios from "axios";
@@ -67,6 +68,7 @@ const App = () => {
           <Route path="/admins" element={<AllAdmins />} />
           <Route path="/resource" element={<Resource />} />
           <Route path="/resource/:semester" element={<Semester/>}/>
+          <Route path="/resource/:semester/:subject" element={<Subject/>} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blog/update/:id" element={<UpdateBlog />} />
         </Routes>

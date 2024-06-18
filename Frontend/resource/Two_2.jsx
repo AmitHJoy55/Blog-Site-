@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
+import MiniCard from '../src/components/miniComponents/MiniCard';
 
-const Two_2 = () => {
+function Two_2() {
+  const subjects = ['Algorithm Design & Analysis', 'Ethics & Cyber Law', 'MIS', 'OS', 'Numerical Analysis','TOC'];
+
   return (
-    <div>
-      Two_2
+   
+    <div className="subject-container">
+      <h1>2-2</h1>
+      <div className="course-section">
+        {subjects.map((subject, index) => (
+          <MiniCard key={index} subject={subject} />
+        ))}
+      </div>
     </div>
-  )
+   
+  );
 }
 
-export default Two_2
+export default Two_2;

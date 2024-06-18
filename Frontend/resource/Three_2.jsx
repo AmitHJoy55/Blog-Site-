@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
+import MiniCard from '../src/components/miniComponents/MiniCard';
 
-const Three_2 = () => {
+function Three_2() {
+  const subjects = ['BUS 301W', 'Distributed System', 'SWE 333', 'ML'];
+
   return (
-    <div>
-      Three_2
+   
+    <div className="subject-container">
+      <h1>3-2</h1>
+      <div className="course-section">
+        {subjects.map((subject, index) => (
+          <MiniCard key={index} subject={subject} />
+        ))}
+      </div>
     </div>
-  )
+   
+  );
 }
 
-export default Three_2
+export default Three_2;
