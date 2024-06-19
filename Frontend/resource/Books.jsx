@@ -87,6 +87,60 @@ const Books = () => {
         link: "https://drive.google.com/file/d/1HLkLqe3NUekGsekPtHPPPGoqXDqu67cP/view?usp=sharing",
       }
     ],
+    MAT_107W : [
+      {
+        title: "Schaums-Outline-of-Linear-Algebra-5th-Ed",
+        link: "https://drive.google.com/file/d/1tYz_97ydLnm_kl33HgkZfu_HYatO19tR/view?usp=sharing",
+      },
+      {
+        title: "Elementary_linear_algebra_applications_v",
+        link: "https://drive.google.com/file/d/1g79RjXEf7xeoGd9fmfR67Qt2QOPkqMtj/view?usp=sharing",
+      }
+    ],
+    SWE_127: [
+      {
+        title: "Lipschutz, Seymour - Data Structures (2014, McGraw Hill Education)",
+        link: "https://drive.google.com/file/d/1HifQnqpPORYXeHDxxNMM1ITow_WWem7F/view?usp=sharing",
+      },
+      {
+        title: "Data Structure",
+        link: "https://drive.google.com/file/d/140a9siMSqUM3_6YDE517-hLf-mqYNUHY/view?usp=sharing",
+      }
+    ],
+    SOC_203W: [
+      {
+        title: "Sociology A Brief Introduction by Richard T. Schaefer",
+        link: "https://drive.google.com/file/d/1Or8r-g97setl-9fKJM3CmDcWTC_rOfI1/view?usp=sharing",
+      },
+      {
+        title: "Sociology",
+        link: "https://drive.google.com/file/d/1COWun7vzLTBMADsJg4iMnnH_8wtfUrdY/view?usp=sharing",
+      }
+    ],
+    SWE_125 : [
+      {
+        title: "Roger-S.-Pressman_-Bruce-R.-Maxin-Software-E ... ners-Approach-McGraw-Hill-Education-2014",
+        link: "https://drive.google.com/file/d/12AbuNt7vd8gJqSWOJbXyKKuUMKGt2grZ/view?usp=sharing",
+      },
+      {
+        title: "Software-Engineering-10th-Edition-PDFDrive",
+        link: "https://drive.google.com/file/d/1fdaHMtjbuvfrP0GPjWtbz9VQ70BvmQ8x/view?usp=sharing",
+      }
+    ],
+    STA_101W : [
+      {
+        title: "Correlation & Regression",
+        link: "https://drive.google.com/file/d/1JK0Ud455g8bZYDlDsCSoJjX0r5mdrzkq/view?usp=sharing",
+      },
+      {
+        title: "STAT__101W__Final_Preparation__Shanto",
+        link: "https://drive.google.com/file/d/1uvpu8Rs1glKLwDkLL0gkjkXJzNXR83pk/view?usp=sharing",
+      },
+      {
+        title: "Stat-note-mehraj",
+        link: "https://drive.google.com/file/d/1d_37-Bj9tcNnNl1XDDn-9ttmhaqms62C/view?usp=sharing",
+      }
+    ],
 
   };
 
