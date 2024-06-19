@@ -1770,7 +1770,30 @@ body.dark-mode {
   gap: 10px;
 }
 
-h1 {
+.subject-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.BookAndNote-container h1  {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.BookAndNote-container p  {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* **************Book Page**************** */
+
+.book-container h1  {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* **************Note Page**************** */
+
+.notes-container h1  {
   text-align: center;
   margin-bottom: 20px;
 }

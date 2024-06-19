@@ -16,7 +16,7 @@ const Subject = () => {
 
   return (
     <article className={mode === "dark" ? "dark-bg about" : "light-bg about"}>
-    <div>
+    <div className="BookAndNote-container">
       <h1>
          {subject}
       </h1>
