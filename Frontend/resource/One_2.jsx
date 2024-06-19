@@ -2,7 +2,7 @@ import React from 'react';
 import MiniCard from '../src/components/miniComponents/MiniCard';
 
 function One_2() {
-  const subjects = ['Sociology', 'Linear Math', 'ISE', 'Data Structure', 'Statistics'];
+  const subjects = ['SOC_203W', 'MAT_107W', 'SWE_125', 'SWE_127', 'STA_101W'];
 
   return (
    
