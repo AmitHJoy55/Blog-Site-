@@ -129,17 +129,14 @@ const Books = () => {
     ],
     STA_101W : [
       {
-        title: "Correlation & Regression",
-        link: "https://drive.google.com/file/d/1JK0Ud455g8bZYDlDsCSoJjX0r5mdrzkq/view?usp=sharing",
+        title: "Introductory Statistics",
+        link: "https://drive.uqu.edu.sa/_/mskhayat/files/MySubjects/20178FS%20Elementary%20Statistics/Introductory%20Statistics%20(7th%20Ed).pdf",
       },
       {
-        title: "STAT__101W__Final_Preparation__Shanto",
-        link: "https://drive.google.com/file/d/1uvpu8Rs1glKLwDkLL0gkjkXJzNXR83pk/view?usp=sharing",
-      },
-      {
-        title: "Stat-note-mehraj",
-        link: "https://drive.google.com/file/d/1d_37-Bj9tcNnNl1XDDn-9ttmhaqms62C/view?usp=sharing",
+        title: "Probability And Statistics: The Science of Uncertainity",
+        link: "https://www.utstat.toronto.edu/mikevans/jeffrosenthal/book.pdf",
       }
+      
     ],
 
   };

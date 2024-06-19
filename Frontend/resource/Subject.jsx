@@ -23,7 +23,7 @@ const Subject = () => {
       <p>
         Details of {subject} course 
       </p>
-      {/* Add more details based on the subject */}
+      
       <div className="BookAndNote-container">
       <div className="BookAndNote-section">
           {resources.map((resource, index) => (
