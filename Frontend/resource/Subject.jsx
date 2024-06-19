@@ -21,7 +21,7 @@ const Subject = () => {
          {subject}
       </h1>
       <p>
-        Details for {subject} course in {semester} semester.
+        Details of {subject} course 
       </p>
       {/* Add more details based on the subject */}
       <div className="BookAndNote-container">
