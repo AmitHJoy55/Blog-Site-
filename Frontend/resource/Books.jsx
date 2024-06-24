@@ -138,7 +138,76 @@ const Books = () => {
       }
       
     ],
-
+    SWE_229 : [
+      {
+        title:"Introduction_to_algorithms-3rd Edition",
+        link: "https://drive.google.com/file/d/1F3V1294HsHkiSbVHTPyGyA4Af5hYLd3E/view?usp=sharing",
+      },
+      {
+        title: "Problem-Solving Methods in Combinatorics.pdf",
+        link: "https://drive.google.com/file/d/1gSyrRheKlyZ4_gdD-WH1G4nrMDakEiZH/view?usp=sharing",
+      },
+      {
+        title: "Algorithms (4th ed.) [Sedgewick & Wayne 2011-03-19].pdf",
+        link: "https://drive.google.com/file/d/11NgXQUpPob--zjeun5rtmD5CGNT1_58L/view?usp=sharing",
+      }
+      
+    ],
+    SWE_235 : [
+      {
+        title:"Engineering-Ethics.pptx",
+        link: "https://docs.google.com/presentation/d/1Z4CP4dPSRaUOx03tMcy_5e_Z8J1or1Fv/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title: "ETHICS IN ENGINEERING slide-2",
+        link: "https://drive.google.com/file/d/1DV82iVj7jFmwPHeolnOyPZJY8gc4mK0w/view?usp=sharing",
+      }
+    ],
+    SWE_237 : [
+      {
+        title:"Kenneth_C.Laudon,Jane_P_.Laudon_- ... ormation_Sysrem_13th_Edition_.pdf",
+        link: "https://drive.google.com/file/d/1x0tBaFQYcqBqVbEMC2VmP-d6coWidpPm/view?usp=sharing",
+      },
+      {
+        title: "ip-addresses.pdf",
+        link: "https://drive.google.com/file/d/1JsQ1W2dsUFIuCPmgDhukN9C35oyHrFrB/view?usp=sharing",
+      },
+      {
+        title: "MIS-Example-UseCaseWorkFlow.pdf",
+        link: "https://drive.google.com/file/d/12YJTvRuhQem27vlG9meFnw_yxJCnS7AE/view?usp=sharing",
+      }
+    ],
+    SWE_233 : [
+      {
+        title:"OPERATING SYSTEMS NOTES R18.pdf",
+        link: "https://drive.google.com/file/d/1pmG56XoROxcOTfuS5Mn5Hwh6lC251-4b/view?usp=sharing",
+      }
+    ],
+    SWE_231 : [
+      {
+        title:"Numerical-Analysis-Using-MATLAB-and-Excel-Steven-T.-Karris.pdf",
+        link: "https://drive.google.com/file/d/1jHEs9dKpvQgXVyN2fnEHNR9Lt_ScQP62/view?usp=sharing",
+      },
+      {
+        title:"Numerical Methods for Engineers-6th edi.pdf",
+        link: "https://drive.google.com/file/d/1YD-WQDFGFmZNW93LcrI1G0htO-8zjP7t/view?usp=sharing",
+      },
+    ],
+    SWE_227 : [
+      {
+        title:"Sipser_Introduction.to.the.Theory.of.Computation.3E.pdf",
+        link: "https://drive.google.com/file/d/1omz9EgJKrPbCZK_xHOVYnfDZlbQ3Aq-I/view?usp=sharing",
+      },
+      {
+        title:"Introduction to Languages and the theory of computation by JC Martin.pdf",
+        link: "https://drive.google.com/file/d/1v9THYdicENHCVCLAesgavc_t2-0Y3LNK/view?usp=sharing",
+      },
+      {
+        title:"Hopcroft-Automata Theory, Languages,and Computation.pdf",
+        link: "https://drive.google.com/file/d/1N2W0SUeeHajh7bJIT9XRLWPFlO0blqW5/view?usp=sharing",
+      },
+    ],
+    
   };
 
   const books = subjectBooks[subject] || [];
