@@ -325,6 +325,38 @@ const Books = () => {
         link: "https://drive.google.com/file/d/1h0e-7OpyizIIPqTCyOdwGpTUA9ZIIp3M/view?usp=sharing",
       }
     ], 
+    BUS_301W : [
+      {
+        title:"Entrepreneur_Development-1.pdf",
+        link: "https://drive.google.com/file/d/1N3eAfxGs8t4ALyzrHg_Uko42QYO2V236/view?usp=sharing",
+      },
+      {
+        title:"Chapter-02",
+        link: "https://drive.google.com/file/d/19BslbZxNUgJ9XQ2BL9FWsF7YbYwHwDA3/view?usp=sharing",
+      },
+      {
+        title:"Chapter-03",
+        link: "https://drive.google.com/file/d/1Az_5x0H-67wtulE8sKINcuVvnSAVIA2S/view?usp=sharing",
+      }
+    ], 
+    SWE_343 : [
+      {
+        title:"[Adaptive Computation and Machine L ... 012, The MIT Press) - libgen.lc.pdf",
+        link: "https://drive.google.com/file/d/1TQsCfMOSnmWHa8AG3012MLkw8YPfHUdY/view?usp=sharing",
+      }
+    ], 
+    SWE_333 : [
+      {
+        title:"SW Testing PDF.pdf",
+        link: "https://drive.google.com/file/d/1Gd58WrrYfP8lehV_U2XxIBMnRdfyg0Jo/view?usp=sharing",
+      }
+    ], 
+    SWE_327: [
+      {
+        title:"Coulouris, George_Dollimore, Jean_K ... cepts and Design-Pearson (2011).pdf",
+        link: "https://drive.google.com/file/d/1Y7MI_rcWIDYex7w74NTubqs9ShiZD0iz/view?usp=sharing",
+      }
+    ], 
   };
 
   const books = subjectBooks[subject] || [];
