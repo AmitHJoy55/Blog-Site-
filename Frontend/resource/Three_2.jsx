@@ -2,7 +2,7 @@ import React from 'react';
 import MiniCard from '../src/components/miniComponents/MiniCard';
 
 function Three_2() {
-  const subjects = ['BUS_301W', 'SWE_327', 'SWE_333', 'SWE_343'];
+  const subjects = ['BUS_301W', 'Distributed_System', 'SWE_333', 'SWE_343'];
 
   return (
    

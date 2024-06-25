@@ -351,7 +351,7 @@ const Books = () => {
         link: "https://drive.google.com/file/d/1Gd58WrrYfP8lehV_U2XxIBMnRdfyg0Jo/view?usp=sharing",
       }
     ], 
-    SWE_327: [
+    Distributed_System: [
       {
         title:"Coulouris, George_Dollimore, Jean_K ... cepts and Design-Pearson (2011).pdf",
         link: "https://drive.google.com/file/d/1Y7MI_rcWIDYex7w74NTubqs9ShiZD0iz/view?usp=sharing",
