@@ -127,6 +127,22 @@ const Notes = () => {
         link: "https://drive.google.com/file/d/1iCG3bE0J8zgkDzDFLyIeLFm-t-zMY0qH/view", 
       },
     ],
+
+    SWE_229: [
+      {
+        title: "Algorithm Note-(Hasing)",
+        link: "https://drive.google.com/file/d/1lRtwUCGvrid_gLKh8gI4ekWWm0Ccnly3/view", 
+      },
+      
+    ],
+
+    SWE_227: [
+      {
+        title: "Regular Expression",
+        link: "https://drive.google.com/file/d/1uFXeUn8jpxFXbAYIaQQX-R6AKuqWkl6S/view", 
+      },
+      
+    ],
   };
 
   const notes = subjectNotes[subject] || [];
