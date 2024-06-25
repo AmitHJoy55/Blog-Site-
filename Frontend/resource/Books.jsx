@@ -207,7 +207,156 @@ const Books = () => {
         link: "https://drive.google.com/file/d/1N2W0SUeeHajh7bJIT9XRLWPFlO0blqW5/view?usp=sharing",
       },
     ],
-    
+    CSE_313W : [
+      {
+        title:"Lecture Notes on Computer Networks.pdf",
+        link: "https://drive.google.com/file/d/1lMVDk-OVdq396qgV_kAH96MIv_RP3qId/view?usp=sharing",
+      },
+      {
+        title:"Lecure#1 - Fundamentals.pdf",
+        link: "https://drive.google.com/file/d/1BTJiO9rovoRCRVahghBJs82zFtvjh4q4/view?usp=sharing",
+      },
+      {
+        title:"Lecure#2 - Fundamentals.pdf",
+        link: "https://drive.google.com/file/d/14T26_8_Vy8Jd2ArWUL72H900WBEYzotq/view?usp=sharing",
+      },
+      {
+        title:"Lecure#3 - Local Area Network.pdf",
+        link: "https://drive.google.com/file/d/1Z8iRWCc9oLwYt_az5fOH6f725Hr-2Pd9/view?usp=sharing",
+      },
+      {
+        title:"Lecure#4 - Local Area Network.pdf",
+        link: "https://drive.google.com/file/d/1HcKVSxrsfkDcFY3OZdrUe1W9Jh-dN3Ea/view?usp=sharing",
+      },
+      {
+        title:"Lecure#5 - Local Area Network.pdf",
+        link: "https://drive.google.com/file/d/1n478YOgVrTbG0qbpb4qs2jhwoTY_f6P7/view?usp=sharing",
+      },
+      {
+        title:"Lecure#6 - Network Layer.pdf",
+        link: "https://drive.google.com/file/d/1II0AgHTIJiYX10-zfEZ3DcOG9fsFci_q/view?usp=sharing",
+      },
+      {
+        title:"Lecure#7 - Network Layer.pdf",
+        link: "https://drive.google.com/file/d/1G8ZFJ_SA9lPBj7j7tbyaTu1KHeVXNn40/view?usp=sharing",
+      },
+    ],
+    SWE_321 : [
+      {
+        title:"Design Patterns Elements of Reusable Object-Oriented Software.pdf",
+        link: "https://drive.google.com/file/d/1CS8smbNif8Yw3fCpmeJeL-wuufGxZzB9/view?usp=sharing",
+      },
+      {
+        title:"Head First Design Patterns.pdf",
+        link: "https://drive.google.com/file/d/1qaHMYALAXZe-mWSFCltZSklILA1rMs6a/view?usp=sharing",
+      }
+    ], 
+    SWE_323 : [
+      {
+        title:"01_Introduction.PPTX",
+        link: "https://docs.google.com/presentation/d/1OCS6HPY6XctMGzJxqNiWuuLiEPDbbi2s/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"02_Agent.PPTX",
+        link: "https://docs.google.com/presentation/d/1PIVYMk3uLrqlfoPoqMf5eCAr4ca-9ckS/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Copy of 03_Uninformed Search.PPTX",
+        link: "https://docs.google.com/presentation/d/1S6CyAbwGyATpbSwImkI4A9sIw3WmVoq-/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Copy of 04_State Space search.PPTX",
+        link: "https://docs.google.com/presentation/d/1fq7LhCGWfFJP8S5T7RJcT4xpHQ4AAGbf/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Copy of 05_Informed Search.PPTX",
+        link: "https://docs.google.com/presentation/d/1pvEQ6ilZjFh3vQB_kHzF8lwvpv04a23m/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Copy of 06_Local Search.PPTX",
+        link: "https://docs.google.com/presentation/d/1nXLh1wlDWcYcQ4N-pp3jCUj7niI6jOa7/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Copy of 07_CSP.PPTX",
+        link: "https://docs.google.com/presentation/d/1cM-aFM2wonoNkNiQgrLWXCZRg3j6TPeL/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      }
+    ], 
+    SWE_327 : [
+      {
+        title:"Chapter 1: Introduction",
+        link: "https://docs.google.com/presentation/d/14jo9Vn9zoBHozM9LFdPqNv54QsEE2aTm/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 3: Introduction to SQL",
+        link: "https://docs.google.com/presentation/d/17qYB6GRlJ0iIqJHlrqD8_KZ_FHRATmIT/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 7: Entity-Relationship Model",
+        link: "https://docs.google.com/presentation/d/1Qu9AAKKYnyGNYmyrtE5q90m0IwCzbWSw/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 10: Storage and File Structure",
+        link: "https://docs.google.com/presentation/d/1isxnNZRJCO_yYQ2pwr1RtvOEEysaGeZX/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 11: Indexing and Hashing",
+        link: "https://docs.google.com/presentation/d/1ZLMndkFl7fKAfgNrZWYCZjkECtBTpRm7/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 14: Transactions ",
+        link: "https://docs.google.com/presentation/d/1FrngFZ_TZup1UJ5rhVNYVuMLGk1s-qm-/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 15 : Concurrency Control",
+        link: "https://docs.google.com/presentation/d/1ks_TuSJ9Ciba-7qra_F03aWqf7OYxYKe/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Chapter 17: Database System Architectures",
+        link: "https://docs.google.com/presentation/d/12JQ_Lmi20OaC1qiIDTs_AFgXNcRdMyFC/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      }
+    ], 
+    SWE_330 : [
+      {
+        title:"Study Plan on HTTP and REST.pdf",
+        link: "https://drive.google.com/file/d/1LafVd82LxrdyHJzum65v7AnRaBpkky2V/view?usp=sharing",
+      },
+      {
+        title:"Gerti Kappel - Web Tech.pdf",
+        link: "https://drive.google.com/file/d/1h0e-7OpyizIIPqTCyOdwGpTUA9ZIIp3M/view?usp=sharing",
+      }
+    ], 
+    BUS_301W : [
+      {
+        title:"Entrepreneur_Development-1.pdf",
+        link: "https://drive.google.com/file/d/1N3eAfxGs8t4ALyzrHg_Uko42QYO2V236/view?usp=sharing",
+      },
+      {
+        title:"Chapter-02",
+        link: "https://drive.google.com/file/d/19BslbZxNUgJ9XQ2BL9FWsF7YbYwHwDA3/view?usp=sharing",
+      },
+      {
+        title:"Chapter-03",
+        link: "https://drive.google.com/file/d/1Az_5x0H-67wtulE8sKINcuVvnSAVIA2S/view?usp=sharing",
+      }
+    ], 
+    SWE_343 : [
+      {
+        title:"[Adaptive Computation and Machine L ... 012, The MIT Press) - libgen.lc.pdf",
+        link: "https://drive.google.com/file/d/1TQsCfMOSnmWHa8AG3012MLkw8YPfHUdY/view?usp=sharing",
+      }
+    ], 
+    SWE_333 : [
+      {
+        title:"SW Testing PDF.pdf",
+        link: "https://drive.google.com/file/d/1Gd58WrrYfP8lehV_U2XxIBMnRdfyg0Jo/view?usp=sharing",
+      }
+    ], 
+    SWE_327: [
+      {
+        title:"Coulouris, George_Dollimore, Jean_K ... cepts and Design-Pearson (2011).pdf",
+        link: "https://drive.google.com/file/d/1Y7MI_rcWIDYex7w74NTubqs9ShiZD0iz/view?usp=sharing",
+      }
+    ], 
   };
 
   const books = subjectBooks[subject] || [];
