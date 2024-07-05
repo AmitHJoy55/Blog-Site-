@@ -128,6 +128,46 @@ const Notes = () => {
       },
     ],
 
+    CSE_219 : [
+      {
+        title: "Pipelining",
+        link: "https://docs.google.com/presentation/d/1s1mWasGL1ffYmR9PRDZ0Pymw0PyfSdfU/edit#slide=id.p1",
+      },
+      {
+        title: "Memory Hierarchy",
+        link: "https://docs.google.com/presentation/d/1h4BVELCCLT8H4INQ7nDjr3fpN_A2LJEt/edit#slide=id.p1",
+      },
+      {
+        title: "Multiple ,Vector Processor & GPUs ",
+        link: "https://docs.google.com/presentation/d/1s-_QyLwecSV8n4QJBxgk16zLG2ANJdY5/edit#slide=id.p1",
+      },
+      
+    ],
+
+    CP: [
+      {
+        title: "Resource for CP Algorithm ",
+        link: "https://cp-algorithms.com/", 
+      }
+      
+    ],
+
+    ECO_205W : [
+      {
+        title: "Consumer Theory ",
+        link: "https://drive.google.com/file/d/1-9mCLvl162fzZCbQFJzOZ6eF3cvU4qK2/view",
+      },
+      {
+        title: "Competitive Supply ",
+        link: "https://drive.google.com/file/d/1r716wVnPBxTE7qqYw7iih5VTstmudW8m/view",
+      },
+      {
+        title: "Monopoly, Oligopoly, and Monopolistic Competition ",
+        link: "https://drive.google.com/file/d/1DnZ4N8IqDl5y-ondt2Bn78FjjzqZceQL/view",
+      },
+      
+    ],
+
     SWE_229: [
       {
         title: "Algorithm Note-(Hasing)",

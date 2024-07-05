@@ -1805,6 +1805,11 @@ body.dark-mode {
   margin-bottom: 20px;
 }
 
+.no-books-available{
+  text-align: center;
+  
+}
+
 /* **************Note Page**************** */
 
 .notes-container h1  {

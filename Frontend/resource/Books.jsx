@@ -138,6 +138,59 @@ const Books = () => {
       }
       
     ],
+
+    OOP : [
+      {
+        title: "Head First Java",
+        link: "https://drive.google.com/file/d/1AdqpoUgcTAKjW0LBDfyelE9vtcc8xRtm/view",
+      },
+      {
+        title: "Java The Complete Reference",
+        link: "https://drive.google.com/file/d/11uRuGD1bZRW6Ww-Q1QMxIBLdw_R7nzqq/view",
+      },
+      {
+        title: "Effective Java 3rd Edition",
+        link: "https://drive.google.com/file/d/1vPdwr75yynj-85-BnAsS4ScU2iMMikrj/view",
+      }
+      
+    ],
+
+    CP : [
+      {
+        title: "Competitive Programming book",
+        link: "https://cses.fi/book/book.pdf",
+      }
+      
+    ],
+    
+
+    BUS_201W : [
+      {
+        title: "Cost And Management Accounting",
+        link: "https://www.icsi.edu/media/webmodules/publications/FULL_BOOK_PP-CMA-2017-JULY_4.pdf",
+      }    
+      
+    ],
+
+    CSE_219 : [
+      {
+        title: "Computer Architecture",
+        link: "https://acs.pub.ro/~cpop/SMPA/Computer%20Architecture%20A%20Quantitative%20Approach%20(5th%20edition).pdf",
+      }
+      
+    ],
+
+    ECO_205W : [
+      {
+        title: "Economics By Hubbard R. Glenn ",
+        link: "https://drive.google.com/file/d/1tafvBPT70PuLFmkd_ad4415nwyNDpbN5/view",
+      }
+      
+    ],
+
+
+
+
     SWE_229 : [
       {
         title:"Introduction_to_algorithms-3rd Edition",
@@ -411,9 +464,15 @@ const Books = () => {
     <div className="book-container">
       <h1>Books</h1>
       <div className="book-section">
-        {books.map((book, index) => (
-          <MiniCard key={index} subject={book.title} link={book.link} />
-        ))}
+      {books.length > 0 ? (
+            books.map((book, index) => (
+              <MiniCard key={index} subject={book.title} link={book.link} />
+            ))
+          ) : (
+            <div className="no-books-available">
+              <img src="http://localhost:5173/no_book.png" alt="No books available" />
+            </div>
+          )}
       </div>
     </div>
     </article>
