@@ -357,7 +357,52 @@ const Books = () => {
         link: "https://drive.google.com/file/d/1Y7MI_rcWIDYex7w74NTubqs9ShiZD0iz/view?usp=sharing",
       }
     ], 
+    SWE_423: [
+      {
+        title:"Schaum's Outline of Theory and Problems of Comp ... Roy A._ Xiang, Zhigang -McGraw-Hill (2000).pdf",
+        link: "https://drive.google.com/file/d/1Cz9XUe9vIM_8FecPHdrPKAaoIp-teo28/view?usp=sharing",
+      },
+      {
+        title:"Digital Image Processing",
+        link: "https://docs.google.com/presentation/d/1nLc5rGduSGrKoiEkOd6FiRY49OriW3TD/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"Basics of Computer",
+        link: "https://docs.google.com/presentation/d/1XsfjRIG0Nkv9VzgfTkVdelbAJuyt_9r2/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"02-color",
+        link: "https://docs.google.com/presentation/d/1BKhkf4kN-7qAuEYZrPXGbrpCdnrK4Nyi/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+      {
+        title:"0_3_Scan_Conversion_Algo_Examples",
+        link: "https://docs.google.com/presentation/d/1quEUDVWcrRsNeCpZEZ0jxjEnOafBhVSi/edit?usp=sharing&ouid=114521500465570756019&rtpof=true&sd=true",
+      },
+    ], 
+    SWE_425 : [
+      {
+        title:"Software Project Management.pdf",
+        link: "https://github.com/Sumonta056/SWE-4-1-Semester-Resources/blob/9ef722c8510c366e67f926925d402603e040f4b2/Software%20Project%20Management/Book/SPM.pdf",
+      }
+    ], 
+    SWE_429 : [
+      {
+        title:"Michael Goodrich, Roberto Tamassia - Introduction ... ernational Edition (2014, Pearson) - libgen.lc.pdf",
+        link: "https://drive.google.com/file/d/125Hxo57DzdqRkWhNrv1ELE5OWbckXtrb/view?usp=sharing",
+      },
+      {
+        title:"cryptography-and-network-security_-principles-and-practice-7th-global-edition.pdf",
+        link: "https://drive.google.com/file/d/1qHyhvv0Gcx0lUU21KUHNvpwnA36lhaUN/view?usp=sharing",
+      }
+    ], 
+    SWE_431 : [
+      {
+        title:"Gerard Jounghyun Kim -Human Computer Interaction.pdf",
+        link: "https://github.com/Sumonta056/SWE-4-1-Semester-Resources/blob/main/Human%20Computer%20Interaction/Book/Gerard%20Jounghyun%20Kim%20-%20Human-Computer%20Interaction%20%20Fundamentals%20and%20Practice-Auerbach%20Publications%20(2015).pdf",
+      }
+    ], 
   };
+
 
   const books = subjectBooks[subject] || [];
 

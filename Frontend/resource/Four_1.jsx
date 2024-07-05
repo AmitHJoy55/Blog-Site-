@@ -2,7 +2,7 @@ import React from 'react';
 import MiniCard from '../src/components/miniComponents/MiniCard';
 
 function Four_1() {
-  const subjects = ['Computer Graphics', 'Human Computer Interaction', 'INS', 'Software Project management'];
+  const subjects = ['SWE_423', 'SWE_431', 'SWE_429', 'SWE_425'];
 
   return (
    
