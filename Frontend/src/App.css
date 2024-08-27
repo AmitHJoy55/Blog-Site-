@@ -89,6 +89,8 @@ nav .links {
   flex: 2;
   display: flex;
   justify-content: space-between;
+  
+  
 }
 nav .logo span {
   font-weight: 900;
@@ -103,7 +105,8 @@ nav .logo .icon{
 nav ul {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
+  
 }
 nav ul a {
   text-decoration: none;
@@ -118,11 +121,11 @@ nav ul a {
 nav .btns {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 nav .btns a,
 nav .btns button {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -134,7 +137,7 @@ nav .btns button {
 nav .btns .dashboard-btn,
 nav .btns .logout-btn,
 nav .btns .login-btn {
-  font-weight: 700;
+  font-weight: 600;
   padding: 7px 10px;
   border-radius: 7px;
 }
