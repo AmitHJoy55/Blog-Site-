@@ -127,6 +127,138 @@ const Notes = () => {
         link: "https://drive.google.com/file/d/1iCG3bE0J8zgkDzDFLyIeLFm-t-zMY0qH/view", 
       },
     ],
+
+    CSE_219 : [
+      {
+        title: "Pipelining",
+        link: "https://docs.google.com/presentation/d/1s1mWasGL1ffYmR9PRDZ0Pymw0PyfSdfU/edit#slide=id.p1",
+      },
+      {
+        title: "Memory Hierarchy",
+        link: "https://docs.google.com/presentation/d/1h4BVELCCLT8H4INQ7nDjr3fpN_A2LJEt/edit#slide=id.p1",
+      },
+      {
+        title: "Multiple ,Vector Processor & GPUs ",
+        link: "https://docs.google.com/presentation/d/1s-_QyLwecSV8n4QJBxgk16zLG2ANJdY5/edit#slide=id.p1",
+      },
+      
+    ],
+
+    CP: [
+      {
+        title: "Resource for CP Algorithm ",
+        link: "https://cp-algorithms.com/", 
+      }
+      
+    ],
+
+    ECO_205W : [
+      {
+        title: "Consumer Theory ",
+        link: "https://drive.google.com/file/d/1-9mCLvl162fzZCbQFJzOZ6eF3cvU4qK2/view",
+      },
+      {
+        title: "Competitive Supply ",
+        link: "https://drive.google.com/file/d/1r716wVnPBxTE7qqYw7iih5VTstmudW8m/view",
+      },
+      {
+        title: "Monopoly, Oligopoly, and Monopolistic Competition ",
+        link: "https://drive.google.com/file/d/1DnZ4N8IqDl5y-ondt2Bn78FjjzqZceQL/view",
+      },
+      
+    ],
+
+    SWE_229: [
+      {
+        title: "Algorithm Note-(Hasing)",
+        link: "https://drive.google.com/file/d/1lRtwUCGvrid_gLKh8gI4ekWWm0Ccnly3/view", 
+      },
+      
+    ],
+
+    SWE_227: [
+      {
+        title: "Regular Expression",
+        link: "https://drive.google.com/file/d/1uFXeUn8jpxFXbAYIaQQX-R6AKuqWkl6S/view", 
+      },
+      
+    ],
+    CSE_313W: [
+      {
+        title: "Networking Note",
+        link: "https://drive.google.com/file/d/1Fq8dnmc49ahAG5fF0qvixwls1gdcW_gT/view", 
+      },
+      {
+        title: "Subnetting Note",
+        link: "https://drive.google.com/file/d/1EUvXWgVyyefN6jh60FhPccqorEiRYu2B/view", 
+      },
+      {
+        title: "VLAN Note",
+        link: "https://drive.google.com/file/d/1wdfN7hcWDgykfu3Y9NQazyZoYmNRGtOg/view", 
+      },
+      
+    ],
+
+    SWE_321: [
+      {
+        title: "Refactoring Code Smell",
+        link: "https://drive.google.com/file/d/1pE2blbXsgAnepNdorYEPdJxu-vzYWiTe/view", 
+      },
+      {
+        title: "Archi Pattern",
+        link: "https://drive.google.com/file/d/1e6rRWVJcQ2IQKKnu-iXw-6XgehFQddaR/view", 
+      },     
+      
+    ],
+    SWE_330: [
+      {
+        title: "Web Note",
+        link: "https://drive.google.com/file/d/1rHBfiiDoMjwAQ3SGuqgFWxjwXrkrjFh3/view", 
+      },
+      
+    ],
+
+    SWE_323: [
+      {
+        title: "AI.pdf",
+        link: "https://drive.google.com/file/d/10HLo7xyvJySApRJiCP9RqIT4GxHAqB1Y/view", 
+      },
+      {
+        title: "Course Content",
+        link: "https://drive.google.com/file/d/1LrKv1eZzw-IDWPDLhEJrO43B97wmcApn/view", 
+      },
+      
+    ],
+    Distributed_System: [
+      {
+        title: "Hadoop",
+        link: "https://drive.google.com/file/d/17C3PkiBt2BvYwhcMAl4X_ysijD_UfzG4/view", 
+      },
+      {
+        title: "Transaction",
+        link: "https://drive.google.com/file/d/1QeTovEzes0CFnzEfEnV5XAeyvLuL6qfD/view", 
+      },
+      {
+        title: "Distributed Shared Memory",
+        link: "https://drive.google.com/file/d/1q1sHNAEJbR-8agxkDsZ6qLUVZOBUhhKQ/view", 
+      },
+      
+    ],
+    SWE_343: [
+      {
+        title: "Important Resource",
+        link: "https://docs.google.com/document/d/1uVUlu0S1RmP28FcKHsvqRmuIMyBle5L9/edit#heading=h.gjdgxs", 
+      },
+      {
+        title: "Matrix Derieative's Cheat Sheet",
+        link: "https://drive.google.com/file/d/1rtprbJhKtNS8G2XD6diZ-NLN9WEiI89s/view", 
+      },
+      {
+        title: "Matrix Calculus",
+        link: "https://drive.google.com/file/d/1dlLLCQ-PSNa5hAyXm5eM27P0iRMdBYd8/view", 
+      },
+      
+    ],
   };
 
   const notes = subjectNotes[subject] || [];

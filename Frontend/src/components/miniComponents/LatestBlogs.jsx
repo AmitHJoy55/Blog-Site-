@@ -28,6 +28,7 @@ const LatestBlogs = ({ heading, newClass, blogs }) => {
                 <div className="author">
                   <img src={element.adminAvatar} alt="author_avatar" />
                   <p>{element.adminName}</p>
+                  
                 </div>
               </div>
             </Link>

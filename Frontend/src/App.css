@@ -22,12 +22,13 @@
   display: none;
 }
 .dark-bg {
-  background: #181a2a;
+  background: #0a0a15;
+  ;
   color: #fff !important;
 }
 .light-bg {
   background: #fff;
-  color: #111 !important;
+  color: #111 !important; 
 }
 .dark-bg h1,
 .dark-bg h2,
@@ -88,6 +89,8 @@ nav .links {
   flex: 2;
   display: flex;
   justify-content: space-between;
+  
+  
 }
 nav .logo span {
   font-weight: 900;
@@ -102,7 +105,8 @@ nav .logo .icon{
 nav ul {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
+  
 }
 nav ul a {
   text-decoration: none;
@@ -117,11 +121,11 @@ nav ul a {
 nav .btns {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 nav .btns a,
 nav .btns button {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -133,7 +137,7 @@ nav .btns button {
 nav .btns .dashboard-btn,
 nav .btns .logout-btn,
 nav .btns .login-btn {
-  font-weight: 700;
+  font-weight: 600;
   padding: 7px 10px;
   border-radius: 7px;
 }
@@ -279,7 +283,7 @@ nav .btns .dark-mode {
   background: #fff;
 }
 .dark-navbar {
-  background: #181a2a;
+  background: #0a0a15;
 }
 
 /* ***********************Footer********************* */
@@ -382,7 +386,7 @@ footer .container .news_letter {
 }
 
 .dark-footer {
-  background: #181a2a;
+  background: #0a0a15;
 }
 @media (max-width: 1520px) {
   footer .container {
@@ -414,7 +418,7 @@ footer .container .news_letter {
   --button-background-light: #3B82F6;
   --button-text-light: #ffffff;
   
-  --background-color-dark: #181a2a;
+  --background-color-dark: #0a0a15;
   --text-color-dark: #ffffff;
   --button-background-dark: #2d3748;
   --button-text-dark: #ffffff;
@@ -666,6 +670,7 @@ body.dark-mode {
   min-height: 360px;
   margin: 0 10px;
   text-decoration: none;
+  filter: drop-shadow(1px 1px 10px rgb(137, 180, 237));
 }
 .trending .card::before {
   content: "";
@@ -832,6 +837,8 @@ body.dark-mode {
 /* *********************** Search Bar ************************* */
 .search-container {
   position: relative;
+  border:2px solid black;
+  border-radius: 3%;
 }
 
 .search-input {
@@ -1619,11 +1626,13 @@ body.dark-mode {
 
 .cardresouces {
   display: flex;
+  flex-wrap: wrap;
   background-color: #8577778f;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 10px rgb(248, 247, 247);
   overflow: hidden;
   margin: 1rem;
+  /* min-width: 100px; */
 }
 
 .cardresouces figure {
@@ -1736,9 +1745,15 @@ body.dark-mode {
   margin: 10px;
   text-align: center;
   transition: transform 0.2s;
-  flex: 1 1 calc(33.333% - 40px); /* Adjust flex properties for responsive design */
+  
+  min-width: 300px ;
+  /* max-width: 1000px; */
   box-sizing: border-box;
   border-color: #000;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  
 }
 
 .mini-card:hover {
@@ -1765,6 +1780,7 @@ body.dark-mode {
 
 .course-section {
    display: flex;
+   flex-wrap: wrap;
    
   justify-content: center;
   gap: 10px;
@@ -1773,6 +1789,7 @@ body.dark-mode {
 .subject-container h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .BookAndNote-container h1  {
@@ -1789,6 +1806,11 @@ body.dark-mode {
 .book-container h1  {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.no-books-available{
+  text-align: center;
+  
 }
 
 /* **************Note Page**************** */
