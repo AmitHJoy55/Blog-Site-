@@ -54,7 +54,7 @@ const App = () => {
     };
     fetchUser();
     fetchBlogs();
-  }, []);
+  }, [isAuthenticated , user]);
 
   return (
     <>
