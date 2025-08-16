@@ -1,7 +1,7 @@
 
 import React, { useContext } from 'react';
 
-import { Context } from '../../main'; // Adjust the path as needed
+import { Context } from '../../main'; 
 
 function HeroSection() {
   const { mode } = useContext(Context);
