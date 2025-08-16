@@ -3,14 +3,14 @@ import ErrorHandler from "../middlewares/error.js";
 import { User } from "../models/userSchema.js";
 import { sendToken } from "../utils/jwtToken.js";
 import cloudinary from "cloudinary";
+import crypto from 'crypto';
 
 export const register = catchAsyncErrors(async (req, res, next) => {
   if (!req.files || Object.keys(req.files).length === 0) {
     return next(new ErrorHandler("User Avatar Required!", 400));
   }
+  
   const { avatar } = req.files;
-  console.log("Avatar:", avatar);
-
   const allowedFormats = ["image/png", "image/jpg", "image/jpeg", "image/webp"];
   if (!allowedFormats.includes(avatar.mimetype)) {
     return next(
@@ -20,32 +20,21 @@ export const register = catchAsyncErrors(async (req, res, next) => {
       )
     );
   }
+
   const { name, email, password, registrationNo, role } = req.body;
-  if (
-    !name ||
-    !email ||
-    !password ||
-    !registrationNo ||
-    !role ||
-    !avatar
-  ) {
+  if (!name || !email || !password || !registrationNo || !role || !avatar) {
     return next(new ErrorHandler("Please fill full details!", 400));
   }
+
   let user = await User.findOne({ email });
   if (user) {
-    return next(new ErrorHandler("User already existes", 400));
+    return next(new ErrorHandler("User already exists", 400));
   }
 
-  const cloudinaryResponse = await cloudinary.uploader.upload(
-    avatar.tempFilePath
-  );
-  console.log("Cloudinary Response:", cloudinaryResponse); // Debugging line
+  const cloudinaryResponse = await cloudinary.uploader.upload(avatar.tempFilePath);
   
   if (!cloudinaryResponse || cloudinaryResponse.error) {
-    console.error(
-      "Cloudinary error:",
-      cloudinaryResponse.error || "Unknown cloudinary error!"
-    );
+    return next(new ErrorHandler("Avatar upload failed", 500));
   }
 
   user = await User.create({
@@ -59,25 +48,90 @@ export const register = catchAsyncErrors(async (req, res, next) => {
       url: cloudinaryResponse.secure_url,
     },
   });
-  sendToken(user, 200, "User registered successfully", res);
+
+  const verificationLink = `http://localhost:4000/api/v1/user/verify?token=${verificationToken}`;
+
+  res.status(200).json({
+    success: true,
+    message: "User registered successfully. Please click the link below to verify your email.",
+    verificationLink,  
+  });
 });
+
+
+
+const jwt = require("jsonwebtoken");  
 
 export const login = catchAsyncErrors(async (req, res, next) => {
   const { registrationNo, password } = req.body;
-  if (!registrationNo || !password ) {
+  
+  if (!registrationNo || !password) {
     return next(new ErrorHandler("Please fill full form!", 400));
   }
+  
   const user = await User.findOne({ registrationNo }).select("+password");
+  
   if (!user) {
     return next(new ErrorHandler("Invalid registrationNo or password!", 400));
   }
+
   const isPasswordMatched = await user.comparePassword(password);
+  
   if (!isPasswordMatched) {
     return next(new ErrorHandler("Invalid registrationNo or password", 400));
   }
+
+  if (!user.isVerified) {
+    
+    const verificationToken = jwt.sign(
+      { id: user._id },
+      process.env.JWT_SECRET_KEY,
+      { expiresIn: "1h" }
+    );
+    
+    // Store the token in the database
+    user.verificationToken = verificationToken;
+    await user.save();
+
+    // Send token as a response for alert
+    return res.status(200).json({
+      message: "Account is not verified. Please verify using the token.",
+      verificationToken,
+    });
+  }
+
   
   sendToken(user, 200, "User logged in successfully", res);
 });
+
+
+export const verifyAccount = catchAsyncErrors(async (req, res, next) => {
+  const { token } = req.query;
+
+  if (!token) {
+    return next(new ErrorHandler("Token is required", 400));
+  }
+
+  try {
+    
+    const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const user = await User.findById(decoded.id);
+
+    if (!user) {
+      return next(new ErrorHandler("User not found", 404));
+    }
+
+    
+    user.isVerified = true;
+    user.verificationToken = undefined; 
+    await user.save();
+
+    res.status(200).json({ message: "Account successfully verified!" });
+  } catch (error) {
+    return next(new ErrorHandler("Invalid or expired token", 400));
+  }
+});
+
 
 export const logout = catchAsyncErrors((req, res, next) => {
   res

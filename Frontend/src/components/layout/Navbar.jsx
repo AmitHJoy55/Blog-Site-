@@ -83,9 +83,11 @@ const Navbar = () => {
                 RESOURCE
               </Link>
             </li>
+
             <li>
               <Search />
             </li>
+            
           </ul>
           <div className="btns">
             <button

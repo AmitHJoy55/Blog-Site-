@@ -5,6 +5,9 @@ import { Context } from "../../main";
 const Footer = () => {
   const isDashboard = useLocation("http://localhost:5173/dashboard");
   const { mode, setMode } = useContext(Context);
+  const handleFooter = () => {
+    setShow(!show);
+  };
 
   return (
     <footer
@@ -33,7 +36,7 @@ const Footer = () => {
         <div className="quick_links">
           <h3>Quick Links</h3>
           <ul>
-            <Link to={"/"}>Home</Link>
+          <Link to={"/"} onClick={handleFooter}>HOME</Link>
             <Link to={"/blogs"}>Blogs</Link>
             <Link to={"/about"}>About</Link>
             <Link to={"/dashboard"}>Dashboard</Link>

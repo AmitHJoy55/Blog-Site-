@@ -51,8 +51,7 @@ const CreateBlog = () => {
       formData.append("paraOneImage", paraOneImage);
     }
     try {
-      // const response =  await axios.get("http://localhost:4000/api/v1/blog/getTag",{description:paraOneDescription});
-      // formData.append("tags", response);
+      
       const { data } = await axios.post(
         "http://localhost:4000/api/v1/blog/post",
         formData,
